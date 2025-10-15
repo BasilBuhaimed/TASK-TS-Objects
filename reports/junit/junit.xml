@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="14" failures="6" errors="0" time="3.391">
+  <testsuite name="🌶️🌶️🌶️ Challenge" errors="0" failures="2" skipped="0" timestamp="2025-10-15T14:38:15" time="2.834" tests="2">
+    <testcase classname="🌶️🌶️🌶️ Challenge › addReview" name="should add a review to an exist array of reviews" time="0.011" file="src/tests/challenge.test.ts">
+      <failure>Error: expect(received).toContainEqual(expected) // deep equality
+
+Expected value: {&quot;comment&quot;: &quot;Ater apparatus alo cornu tabgo.&quot;, &quot;reviewer&quot;: &quot;Dustin Langosh V&quot;}
+Received array: [{&quot;comment&quot;: &quot;Crepusculum ver cresco ustilo auxilium vulgo vociferor.&quot;, &quot;reviewer&quot;: &quot;Irvin Hansen&quot;}]
+    at Object.&lt;anonymous&gt; (/Users/boaws/TASK-TS-Objects/src/tests/challenge.test.ts:32:35)
+    at Promise.then.completed (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="🌶️🌶️🌶️ Challenge › addReview" name="should create a review array if one didn&apos;t already exist" time="0" file="src/tests/challenge.test.ts">
+      <failure>Error: expect(received).toContainEqual(expected) // deep equality
+
+Matcher error: received value must not be null nor undefined
+
+Received has value: undefined
+    at Object.&lt;anonymous&gt; (/Users/boaws/TASK-TS-Objects/src/tests/challenge.test.ts:39:35)
+    at Promise.then.completed (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Books" errors="0" failures="4" skipped="0" timestamp="2025-10-15T14:38:15" time="2.85" tests="12">
+    <testcase classname="Books › Understanding Objects › createBook" name="should create a book object with specified properties" time="0.005" file="src/tests/objects.test.ts">
+    </testcase>
+    <testcase classname="Books › Understanding Objects › printBookTitleAndYear" name="should return the book title and published year as a string" time="0" file="src/tests/objects.test.ts">
+    </testcase>
+    <testcase classname="Books › Understanding Objects › printBookTitleAndYear" name="should access the title using dot notation" time="0.001" file="src/tests/objects.test.ts">
+    </testcase>
+    <testcase classname="Books › Understanding Objects › printBookTitleAndYear" name="should access the publishYear using bracket notation" time="0" file="src/tests/objects.test.ts">
+    </testcase>
+    <testcase classname="Books › Modifying Objects › addPageCount" name="should add a pageCount property to the book" time="0.001" file="src/tests/objects.test.ts">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1034
+Received: undefined
+    at Object.&lt;anonymous&gt; (/Users/boaws/TASK-TS-Objects/src/tests/objects.test.ts:61:39)
+    at Promise.then.completed (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Books › Modifying Objects › addPageCount" name="should modify and return the original book object, NOT a copy" time="0.001" file="src/tests/objects.test.ts">
+    </testcase>
+    <testcase classname="Books › Modifying Objects › addISBN" name="should add an ISBN to the book" time="0" file="src/tests/objects.test.ts">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: &quot;978-0-7307-0233-7&quot;
+Received: undefined
+    at Object.&lt;anonymous&gt; (/Users/boaws/TASK-TS-Objects/src/tests/objects.test.ts:77:34)
+    at Promise.then.completed (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Books › Modifying Objects › addISBN" name="should modify and return the original book object, NOT a copy" time="0" file="src/tests/objects.test.ts">
+    </testcase>
+    <testcase classname="Books › Modifying Objects › updatePublishedYear" name="should update the published year of the book" time="0.001" file="src/tests/objects.test.ts">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1937
+Received: 1957
+    at Object.&lt;anonymous&gt; (/Users/boaws/TASK-TS-Objects/src/tests/objects.test.ts:93:43)
+    at Promise.then.completed (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Books › Modifying Objects › updatePublishedYear" name="should modify and return the original book object, NOT a copy" time="0" file="src/tests/objects.test.ts">
+    </testcase>
+    <testcase classname="Books › Modifying Objects › addSecondAuthor" name="should modify the author property to include an additional author" time="0.001" file="src/tests/objects.test.ts">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: [&quot;George R. R. Martin&quot;, &quot;Mr. Sidney Dach&quot;]
+Received: &quot;George R. R. Martin&quot;
+    at Object.&lt;anonymous&gt; (/Users/boaws/TASK-TS-Objects/src/tests/objects.test.ts:109:36)
+    at Promise.then.completed (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:298:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/utils.js:231:10)
+    at _callCircusTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at _runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:252:3)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:126:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at _runTestsForDescribeBlock (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:121:9)
+    at run (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/run.js:71:3)
+    at runAndTransformResultsToJestFormat (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+    at jestAdapter (/Users/boaws/TASK-TS-Objects/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+    at runTestInternal (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:367:16)
+    at runTest (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/runTest.js:444:34)
+    at Object.worker (/Users/boaws/TASK-TS-Objects/node_modules/jest-runner/build/testWorker.js:106:12)</failure>
+    </testcase>
+    <testcase classname="Books › Modifying Objects › addSecondAuthor" name="should modify and return the original book object, NOT a copy" time="0" file="src/tests/objects.test.ts">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,10 +1,32 @@
-// Simple utilities for user input
-export async function getInput(): Promise<string> {
-  // This is a mock implementation - in a real app you'd use readline or similar
-  return "1"; // Mock user selecting option 1
+export async function getUser() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    //   console.log("API call successful");
+    return data;
+  } catch (error) {
+    //   console.error("Error fetching users:", error);
+    return [];
+  }
 }
 
-export async function getUser(): Promise<string> {
-  // This is a mock implementation
-  return "testUser";
+export async function getInput(): Promise<string> {
+  const readline = require("readline");
+
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  return new Promise<string>((resolve) => {
+    rl.question("Enter your input: ", (answer: string) => {
+      rl.close();
+      resolve(answer);
+    });
+  });
 }
