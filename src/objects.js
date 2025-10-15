@@ -1,13 +1,11 @@
-// don't change this interface
-interface Book {
-  title: string;
-  author: string | string[];
-  publishedYear: number;
-  genre: string;
-  pageCount?: number;
-  ISBN?: string;
-}
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createBook = createBook;
+exports.printBookTitleAndYear = printBookTitleAndYear;
+exports.addPageCount = addPageCount;
+exports.addISBN = addISBN;
+exports.updatePublishedYear = updatePublishedYear;
+exports.addSecondAuthor = addSecondAuthor;
 /**
  * `createBook` function:
  * - Accepts four parameters:
@@ -20,30 +18,17 @@ interface Book {
  *  createBook("JavaScript: The Definitive Guide", "David Flanagan", 2020, "Programming");
  *   // => { title: "JavaScript: The Definitive Guide", author: "David Flanagan", publishedYear: 2020, genre: "Programming" }
  */
-function createBook(
-  title: string,
-  author: string,
-  publishedYear: number,
-  genre: string
-): Book {
-  // write your code here...
-
-  return {
-    title: title,
-    author: author,
-    publishedYear: publishedYear,
-    genre: genre,
-  } as Book; // replace "{} as Book" with what you see is fit
+function createBook(title, author, publishedYear, genre) {
+    // write your code here...
+    return {
+        title: title,
+        author: author,
+        publishedYear: publishedYear,
+        genre: genre,
+    }; // replace "{} as Book" with what you see is fit
 }
-
 // DO NOT CHANGE THE LINE OF CODE BELOW (you can use it for testing your code)
-const book = createBook(
-  "Hitchhiker's Guide to The Galaxy",
-  "Douglas Adams",
-  1965,
-  "Sci-Fi"
-);
-
+const book = createBook("Hitchhiker's Guide to The Galaxy", "Douglas Adams", 1965, "Sci-Fi");
 /**
  * `printBookTitleAndYear` function:
  * - Accepts a `book` parameter of type `Book`.
@@ -53,11 +38,10 @@ const book = createBook(
  *  printBookTitleAndYear(book);
  *   // => "Hitchhiker's Guide to The Galaxy 1965"
  */
-function printBookTitleAndYear(book: Book): string {
-  // write your code here...
-  return book.title + " " + book["publishedYear"];
+function printBookTitleAndYear(book) {
+    // write your code here...
+    return book.title + " " + book["publishedYear"];
 }
-
 /**
  * `addPageCount` function:
  * - Accepts:
@@ -68,12 +52,10 @@ function printBookTitleAndYear(book: Book): string {
  *  addPageCount(book, 320);
  *   // => { title: "Hitchhiker's Guide to The Galaxy", author: "Douglas Adams", publishedYear: 1965, genre: "Sci-Fi", pageCount: 320 }
  */
-function addPageCount(book: Book, pageCount: number): Book {
-  // write your code here...
-
-  return book;
+function addPageCount(book, pageCount) {
+    // write your code here...
+    return book;
 }
-
 /**
  * `addISBN` function:
  * - Accepts:
@@ -90,12 +72,10 @@ function addPageCount(book: Book, pageCount: number): Book {
  *   //       ISBN: "978-3-16-148410-0" // ✅ added ISBN
  *   //    }
  */
-function addISBN(book: Book, ISBN: string): Book {
-  // write your code here...
-
-  return book;
+function addISBN(book, ISBN) {
+    // write your code here...
+    return book;
 }
-
 /**
  * `updatePublishedYear` function:
  * - Accepts:
@@ -112,12 +92,10 @@ function addISBN(book: Book, ISBN: string): Book {
  *   //       ISBN: "978-3-16-148410-0"
  *   //    }
  */
-function updatePublishedYear(book: Book, newYear: number): Book {
-  // write your code here...
-
-  return book;
+function updatePublishedYear(book, newYear) {
+    // write your code here...
+    return book;
 }
-
 /**
  * `addSecondAuthor` function:
  * - Accepts:
@@ -137,18 +115,7 @@ function updatePublishedYear(book: Book, newYear: number): Book {
  *   //       ISBN: "978-3-16-148410-0"
  *   //    }
  */
-function addSecondAuthor(book: Book, additionalAuthor: string): Book {
-  // write your code here...
-
-  return book;
+function addSecondAuthor(book, additionalAuthor) {
+    // write your code here...
+    return book;
 }
-
-export {
-  createBook,
-  printBookTitleAndYear,
-  addPageCount,
-  addISBN,
-  updatePublishedYear,
-  addSecondAuthor,
-  Book,
-};

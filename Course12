@@ -1,0 +1,13 @@
+import { getInput, getUser } from "./utilities";
+
+async function userInput() {
+  console.log(`
+    Profitable investments (4week):
+    1. KIB 
+    2. Digitus
+    3. Acico
+    4. IFAHR`);
+  const input = await getInput();
+  console.log(input);
+}
+userInput();
